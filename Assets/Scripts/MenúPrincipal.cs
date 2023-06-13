@@ -48,7 +48,7 @@ public class MenúPrincipal : MonoBehaviour {
     }
     public void Load6() { 
         FoleyPlayer.Play();
-        SceneManagerController.Instance.LoadScene("Level6");
+        SceneManagerController.Instance.LoadScene("Levell6");
         }
 
     public void Jugar()

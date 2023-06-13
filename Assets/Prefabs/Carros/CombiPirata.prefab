@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 114627683533090322}
   - component: {fileID: 50375541474156810}
   - component: {fileID: 61343266733804518}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CombiPirata
   m_TagString: Enemy
   m_Icon: {fileID: 0}

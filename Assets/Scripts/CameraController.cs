@@ -150,7 +150,8 @@ public class CameraController : MonoBehaviour
 
     public void FuncSalir()
     {
-        SceneManager.LoadScene(0);
+        SceneManagerController.Instance.LoadScene("MenúPrincipal");
+        //SceneManager.LoadScene(0);
     }
 
     public void CambiarDificultad(bool easy)
@@ -169,6 +170,7 @@ public class CameraController : MonoBehaviour
 
     public void NextLevel()
     {
-        SceneManager.LoadScene(LevelToLoad);
+        SceneManagerController.Instance.LoadScene(LevelToLoad);
+        //SceneManager.LoadScene(LevelToLoad);
     }
 }

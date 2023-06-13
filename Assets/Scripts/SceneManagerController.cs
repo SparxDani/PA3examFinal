@@ -29,7 +29,7 @@ public class SceneManagerController : MonoBehaviour
 
         Instance = this;
 
-        DontDestroyOnLoad(this.gameObject);
+        //DontDestroyOnLoad(this.gameObject);
     }
 
     private void Start() {
@@ -42,7 +42,6 @@ public class SceneManagerController : MonoBehaviour
         scenNameToLoad = newSceneName;
         onFade = CallLoadScene;
         onLoadScene = CallFadeOut;
-
         CallFadeIn();
     }
 
@@ -69,7 +68,7 @@ public class SceneManagerController : MonoBehaviour
 
             foreground.color = Color.Lerp(imageColor, targetColor, t);
         }
-        
+        imageColor = targetColor;
         onFade?.Invoke();
     }
 
